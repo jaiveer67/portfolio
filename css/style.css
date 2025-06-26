@@ -644,7 +644,7 @@ textarea {
   margin-right: 1.5rem;
   font-size: 1.6rem;
   background: rgba(153, 153, 153, 0.2);
-  border-radius: 5px;
+  border-radius: 1px;
   font-weight: 600;
   color: #777;
 }
