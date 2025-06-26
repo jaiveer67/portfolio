@@ -1,15 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <header>
-    <h1>Hello, I'm Jaiveer</h1>
-    <p>Welcome to my portfolio site.</p>
-  </header>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dopefolio</title>
+    <meta name="description" content="Portfolio Template for Developer" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/headshot.png"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Jaiveer Tiwana</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, I'm Jaiveer</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            Software Developer 
+          </p>
+          <p class="text-primary">
+            Computer Science @ UBC
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="assets/resume.pdf" download class="btn btn--bg">Download Resume</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/linkedin-icon.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/github-icon.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="#"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+          >
+            <img
+              src="./assets/email-icon.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            I'm a software developer passionate about creating intuitive and purposeful digital experiences—especially where systems meet the user.
+      </span>
+    </h2>
+    <div class="about__content">
+      <div class="about__content-main">
+        <h3 class="about__content-title">Get to know me!</h3>
+        <div class="about__content-details">
+          <p class="about__content-details-para">
+            Hey! I'm a recent <strong>Computer Science</strong> graduate from the University of British Columbia. I specialize in creating highly interactive and polished web applications. My interests lie at the intersection of systems and UX, and I enjoy seeing complex logic come to life through smooth, intuitive interfaces.
+          <p class="about__content-details-para">
+            I’m always looking for new ways to grow as a developer, whether it’s building better tools, tackling new frameworks, or optimizing existing systems. Outside of tech, I’m a former varsity runner who enjoys challenging myself in both code and competition. Feel free to <strong>reach out</strong> if you'd like to collaborate or connect!
+          </p>
+        </div>
+        <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+      </div>
+          <div class="about__content-skills">
+        <h3 class="about__content-title">My Skills</h3>
+        <div class="skills">
+          <div class="skills__skill">Python</div>
+          <div class="skills__skill">HTML</div>
+          <div class="skills__skill">CSS</div>
+          <div class="skills__skill">JavaScript</div>
+          <div class="skills__skill">TypeScript</div>
+          <div class="skills__skill">React</div>
+          <div class="skills__skill">Java</div>
+          <div class="skills__skill">C++</div>
+          <div class="skills__skill">Flask</div>
+          <div class="skills__skill">SQL</div>
+          <div class="skills__skill">PHP</div>
+          <div class="skills__skill">Git</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            A selection of some of my recent projects that showcase my skills and interests in software development. 
+            Each project reflects my passion for creating clean, funcitional, and user-friendly applications.
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+    <img
+    src="./assets/blackjack-screenshot.png"
+    alt="Blackjack Screenshot"
+    class="project-screenshot"
+  />
+  <img
+    src="./assets/project-display.png"
+    alt="Frame"
+    class="projects__row-img project-frame"
+  />
+</div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Blackjack Web App</h3>
+              <p class="projects__row-content-desc">
+                Full-stack Blackjack game built with React and Flask, featuring split hands, betting, insurance, and session tracking.
+              </p>
+              <a
+                href="./project-1.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+  <div class="tv-display">
+    <img src="./assets/exoplanet-screenshot.png" class="tv-screenshot" />
+    <img src="./assets/project-display.png" class="tv-frame" />
+  </div>
+</div>
+
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Exoplanet Explorer System</h3>
+              <p class="projects__row-content-desc">
+                PHP web app with a SQLite backend that lets users explore a rich astronomical database. 
+                It supports advanced SQL queries—joins, projections, aggregations—through an interactive UI.
+              </p>
+              <a
+                href="./project-2.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+               <div class="tv-display">
+    <img src="./assets/eg-screenshot.png" class="tv-screenshot" />
+    <img src="./assets/project-display.png" class="tv-frame" />
+  </div>
+</div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Eternal Gauntlet</h3>
+              <p class="projects__row-content-desc">
+                2D turn-based dungeon crawler built in C++ with OpenGL, 
+                featuring multi-floor progression, enemy AI, 
+                and custom combat mechanics.
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/linkedin-icon.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/github-icon.png"
+                  alt="icon"
+                />
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/email-icon.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Jaiveer Tiwana</h4>
+            <p class="main-footer__short-desc">
+              Aspriring software developer with a passion for creating intuitive & functional applications.
+            </p>
+          </div>
+        </div>
+        <div class="main-footer__lower">
+          &copy; 2025 Jaiveer Tiwana. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
